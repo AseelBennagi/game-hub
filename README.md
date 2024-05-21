@@ -4,7 +4,6 @@ Game-Hub is a dynamic and user-friendly web application designed to provide comp
 
 ## Key Features
 
-- **Game Database:** Access an extensive collection of games with detailed information.
 - **Search Functionality:** Easily search for games by title, genre, or platform.
 - **Game Details:** View in-depth information about each game, including screenshots, trailers, and user reviews.
 - **Responsive Design:** Enjoy a seamless user experience across various devices.
