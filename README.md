@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Game-Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Game-Hub is a dynamic and user-friendly web application designed to provide comprehensive information about video games. Leveraging the powerful RAWG.io API, Game-Hub fetches and displays detailed data on a wide range of games, including descriptions, genres, release dates, ratings, and more. This ensures users have access to the latest and most accurate gaming information.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Game Database:** Access an extensive collection of games with detailed information.
+- **Search Functionality:** Easily search for games by title, genre, or platform.
+- **Game Details:** View in-depth information about each game, including screenshots, trailers, and user reviews.
+- **Responsive Design:** Enjoy a seamless user experience across various devices.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js:** A robust JavaScript library for building the user interface.
+- **TypeScript:** A statically typed superset of JavaScript that ensures type safety and enhanced code quality.
+- **Chakra UI:** A modern, accessible, and customizable component library for React, used to create a visually appealing and responsive interface.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+To get started with Game-Hub, follow these steps:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/AseelBennagi/game-hub.git
+    cd game-hub
+    ```
+ 2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+ 3. **Navigate to api-clients.ts in the services file and add your RAWG.io API key:**
+    ```env
+     baseURL: "https://api.rawg.io/api",
+    params: {
+        key: "Add your key here"
+    }
+    ```
+
+4. **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+5. **Open your browser and navigate to:**
+    ```
+    http://localhost:3000
+    ```
